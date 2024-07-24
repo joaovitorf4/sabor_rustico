@@ -31,6 +31,7 @@ main {
     /* width: 100vw; */
     display: flex;
     flex-direction: column;
+    background-color: #222;
     /* padding: 3em; */
     /* height: 60vh; */
     /* background-image: url("imgs/img7.jpeg");
@@ -86,6 +87,10 @@ footer * {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+}
+
+section {
+    color: white;
 }
 
 #initial-pg {
@@ -157,7 +162,7 @@ section {
     font-size: 1.5em;
 }
 
-.cat-prods div {
+.cat-prods > div {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -165,8 +170,45 @@ section {
     padding: 2em;
     background-color: black;
     width: 20vw;
-    height: 25vw;
+    min-height: 45vh;
+    height: 100%;
     border-radius: 1em;
+}
+
+.cat-prods .linguica {
+    display: flex;
+    width: 40vw;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2em;
+}
+
+.linguica > .item-descp {
+    display: flex;
+    height: 100%;
+    max-width: 20vw;
+    gap: 2em;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: black;
+}
+
+.sabores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+}
+
+.sabores-ind {
+    display: flex;
+    flex-direction: column;
+    gap: .25em;
 }
 
 main h1 {
