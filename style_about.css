@@ -241,3 +241,60 @@ header ul {
     display: flex;
     gap: 4em;
 }
+
+@media screen and (max-aspect-ratio: 1/1) {
+    main {
+        padding-top: 15vh;
+        height: fit-content;
+        gap: 2em;
+    }
+
+    main h1 {
+        font-size: 4em;
+    }
+
+    header {
+        height: 15vh;
+    }
+
+    header img {
+        height: 8vh;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 0;
+        text-align: center;
+        gap: .5em;
+    }
+
+    header a {
+        font-size: 1.25em;
+    }
+
+    footer {
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+        padding: 2em;
+        gap: 2em;
+    }
+
+    footer * {
+        text-align: center;
+    }
+}
+
+@media screen and (max-aspect-ratio: .5/1) {
+    section {
+        padding: 1em;
+    }
+
+    header a {
+        font-size: 1em;
+    }
+
+    footer div * {
+        font-size: 1em;
+    }
+}

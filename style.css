@@ -28,18 +28,9 @@ header {
 }
 
 main {
-    /* width: 100vw; */
     display: flex;
     flex-direction: column;
     background-color: #222;
-    /* padding: 3em; */
-    /* height: 60vh; */
-    /* background-image: url("imgs/img7.jpeg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 100% 100%; */
-    /* align-items: center; */
-    /* justify-content: center; */
 }
 
 header img {
@@ -115,11 +106,10 @@ section {
 
 section {
     padding: 3em;
-
 }
 
 #produtos div img {
-    max-width: 15vw;
+    width: 80%;
     border-radius: .5em;
 }
 
@@ -169,7 +159,8 @@ section {
     flex-direction: column;
     padding: 2em;
     background-color: black;
-    width: 20vw;
+    width: 20vw; 
+    min-width: 400px;
     min-height: 45vh;
     height: 100%;
     border-radius: 1em;
@@ -189,7 +180,7 @@ section {
 .linguica > .item-descp {
     display: flex;
     height: 100%;
-    max-width: 20vw;
+    /* max-width: 20vw; */
     gap: 2em;
     align-items: center;
     justify-content: space-between;
@@ -269,4 +260,91 @@ header ul {
     list-style-type: none;
     display: flex;
     gap: 4em;
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+    .cat-prods > div {
+        width: 80vw;
+        gap: 2em;
+        min-width: 0;
+    }
+
+    .cat-prods > .linguica {
+        width: 80vw;
+        min-width: 0;
+    }
+
+    #produtos img {
+        max-width: none;
+        width: 80%;
+    }
+
+    #initial-pg {
+        flex-direction: column;
+    }
+
+    #initial-pg * {
+        text-align: center;
+    }
+
+    #initial-pg img {
+        max-width: none;
+        width: 80%;
+    }
+
+    #initial-pg div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15vh;
+    }
+
+    main h1 {
+        font-size: 4em;
+    }
+
+    header {
+        height: 15vh;
+    }
+
+    header img {
+        height: 8vh;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 0;
+        text-align: center;
+        gap: .5em;
+    }
+
+    header a {
+        font-size: 1.25em;
+    }
+
+    footer {
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+        padding: 2em;
+        gap: 2em;
+    }
+
+    footer * {
+        text-align: center;
+    }
+}
+
+@media screen and (max-aspect-ratio: .5/1) {
+    section {
+        padding: 1em;
+    }
+
+    header a {
+        font-size: 1em;
+    }
+
+    footer div * {
+        font-size: 1em;
+    }
 }
