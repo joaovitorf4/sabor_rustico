@@ -262,6 +262,42 @@ header ul {
     gap: 4em;
 }
 
+#div-depoimentos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 3em;
+    gap: 2em;
+}
+
+#div-depoimentos p {
+    text-align: center;
+    color: black;
+    font-family: "Lexend", sans-serif;
+}
+
+#div-depoimentos span {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    align-items: center;
+}
+
+#div-depoimentos #depoimento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 20vw;
+    min-width: 175px;
+    height: 20vw;
+    min-height: 175px;
+    border-radius: 1em;
+    padding: 1em;
+    background-color: white;
+}
+
 @media screen and (max-aspect-ratio: 1/1) {
     .cat-prods > div {
         width: 80vw;
