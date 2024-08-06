@@ -246,6 +246,16 @@ header a {
     color: rgb(255, 255, 255);
 }
 
+#produtos + h2 {
+    font-size: 4em;
+    margin: 1em 0em;
+}
+
+.cat-prods > div img {
+    width: 100%;
+    border-radius: 1em;
+}
+
 .comprar {
     background-color: #ee9486;
     padding: .5em 1em;
